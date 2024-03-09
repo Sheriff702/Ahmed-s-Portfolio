@@ -1,4 +1,4 @@
-import img from "./me5.png";
+import img from "./me5.webp";
 
 const logotext = "AHMED SHARIF";
 const meta = {
