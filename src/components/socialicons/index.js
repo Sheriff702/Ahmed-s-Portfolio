@@ -1,13 +1,6 @@
 import React from "react";
 import "./style.css";
-import {
-  FaGithub,
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedin,
-  FaYoutube,
-  FaTwitch,
-} from "react-icons/fa";
+import { FaGithub, FaTwitter, FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
 
 export const Socialicons = (params) => {
@@ -17,6 +10,7 @@ export const Socialicons = (params) => {
         {socialprofils.twitter && (
           <li>
             <a
+              aria-label="twitter"
               href={socialprofils.twitter}
               target="_blank"
               rel="noopener noreferrer"
@@ -28,6 +22,7 @@ export const Socialicons = (params) => {
         {socialprofils.github && (
           <li>
             <a
+              aria-label="github"
               href={socialprofils.github}
               target="_blank"
               rel="noopener noreferrer"
@@ -39,6 +34,7 @@ export const Socialicons = (params) => {
         {socialprofils.facebook && (
           <li>
             <a
+              aria-label="facebook"
               href={socialprofils.facebook}
               target="_blank"
               rel="noopener noreferrer"
@@ -50,6 +46,7 @@ export const Socialicons = (params) => {
         {socialprofils.linkedin && (
           <li>
             <a
+              aria-label="linkedin"
               href={socialprofils.linkedin}
               target="_blank"
               rel="noopener noreferrer"
