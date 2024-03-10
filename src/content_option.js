@@ -1,4 +1,8 @@
 import img from "./me5.webp";
+import img2 from "./thewiggleapp.png";
+import img3 from "./djpage.png";
+import img4 from "./hypernetwork.png";
+import img5 from "./hyperflapper.png";
 
 const logotext = "AHMED SHARIF";
 const meta = {
@@ -10,13 +14,13 @@ const meta = {
 const introdata = {
   title: "I’m Ahmed Sharif",
   animated: {
-    first: "I Love Coding",
-    second: "I Code Cool Websites",
+    first: "And I Love Coding",
+    second: "I Also Code Cool Websites",
     third: "I Develop Mobile Apps",
-    forth: "I'm Just Cool",
+    forth: "And I'm Just Cool",
   },
   description:
-    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites.",
+    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe",
   your_img_url: img,
 };
 
@@ -93,35 +97,35 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: img3,
+    description: "I built a Website for Djs",
+    link: "https://dj-jusuf.netlify.app/",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
+    img: "https://zippy-parfait-feebde.netlify.app/clothes/rainbowsweatshirt.webp",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Introducing Frimark, your go-to children's clothing store! Find the best outfits for your little ones at our React-based PWA. Shop conveniently on the web, Android, and iOS platforms.",
+    link: "https://zippy-parfait-feebde.netlify.app/",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: img4,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Its a website i built for a company called Hypernetwork. The website is built with react. The website is available on Web and both android and ios.",
+    link: "https://hypernetworkfed25.github.io/hypernetwork",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: img5,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "this is a game we developed. The game is called Hyperflapper. It's a game where you can play and compete with your friends. The game is available on Web only ",
+    link: "https://simon-rosengren.github.io/Group-8-Project/",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: img2,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Introducing The Wiggle App, your ultimate nightlife companion! Discover the hottest parties, events, clubs, and bars in your city. Available on Android and iOS.",
+    link: "https://thewiggleapp.com/",
   },
+  /*
   {
     img: "https://picsum.photos/400/700/?grayscale",
     description:
@@ -137,8 +141,7 @@ const dataportfolio = [
   },
   {
     img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
+    description: "The wisdom of lthe elimination-essentials.",
     link: "#",
   },
   {
@@ -165,6 +168,7 @@ const dataportfolio = [
       "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
   },
+  */
 ];
 
 const contactConfig = {
