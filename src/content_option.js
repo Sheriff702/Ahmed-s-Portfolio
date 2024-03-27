@@ -1,10 +1,12 @@
 import img from "./me5.webp";
+import logo from "./img.png";
 import img2 from "./thewiggleapp.png";
 import img3 from "./djpage.png";
 import img4 from "./hypernetwork.png";
 import img5 from "./hyperflapper.png";
 
 const logotext = "AHMED SHARIF";
+const logoimg = logo;
 const meta = {
   title: "Ahmed Sharif",
   description:
@@ -38,13 +40,13 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "CTO & Co-Founder",
+    jobtitle: "Co-Founder & CTO ",
     where: "The Wiggle App(Local le Swued AB)",
     date: "2023 - Present",
   },
   {
     jobtitle: "Production Manager",
-    where: "Örebro Län",
+    where: "Postnord, Örebro Län",
     date: "2017 - 2021",
   },
   {
@@ -125,7 +127,7 @@ const dataportfolio = [
       "Introducing The Wiggle App, your ultimate nightlife companion! Discover the hottest parties, events, clubs, and bars in your city. Available on Android and iOS.",
     link: "https://thewiggleapp.com/",
   },
-  /*
+
   {
     img: "https://picsum.photos/400/700/?grayscale",
     description:
@@ -168,16 +170,14 @@ const dataportfolio = [
       "The wisdom of life consists in the elimination of non-essentials.",
     link: "#",
   },
-  */
 ];
 
 const contactConfig = {
   YOUR_EMAIL: "Ahmedsheriffbooking@gmail.com",
-  YOUR_FONE: "(+46)076 066 47 54",
+  YOUR_FONE: "+46 (0)76 066 47 54",
   description:
     "Drop me a line if you have any questions or just want to say hi. I'll get back to you as soon as possible!",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  //  an emailjs.com account
   YOUR_SERVICE_ID: "service_c3fx2b8",
   YOUR_TEMPLATE_ID: "template_9nus7zw",
   YOUR_USER_ID: "uDfnGgGBD0zBBIZU0",
@@ -200,4 +200,5 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  logoimg,
 };
