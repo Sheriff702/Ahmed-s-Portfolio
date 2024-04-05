@@ -4,3 +4,6 @@ node_modules/
 # macOS
 .DS_Store
 
+.example_com.key
+
+.example_com.csr

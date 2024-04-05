@@ -227,3 +227,46 @@ section {
 .intro_sec .h_bg-image {
   filter: saturate(0.5);
 }
+
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* This will make your icons appear in a row */
+  gap: 20px; /* This will add a 20px gap between your icons */
+  justify-content: space-around; /* This will add space between your icons */
+}
+
+.icon {
+  font-size: 4em; /* This will make your icons larger */
+  margin: 0 10px; /* This will add a 10px margin to the left and right of each icon */
+}
+.icon-html {
+  color: #e34f26; /* HTML5 color */
+}
+
+.icon-css {
+  color: #1572b6; /* CSS3 color */
+}
+
+.icon-js {
+  color: #f7df1e; /* JavaScript color */
+}
+
+.icon-react {
+  color: #61dbfb; /* React color */
+}
+
+.icon-node {
+  color: #68a063; /* Node.js color */
+}
+
+.icon-git {
+  color: #f1502f; /* Git color */
+}
+
+.icon-github {
+  color: #ffffff; /* GitHub color */
+}
+
+.icon-npm {
+  color: #cb3837; /* npm color */
+}

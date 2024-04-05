@@ -9,6 +9,17 @@ import {
   skills,
   services,
 } from "../../content_option";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faNode,
+  faGit,
+  faGithub,
+  faNpm,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const About = () => {
   return (
@@ -64,6 +75,24 @@ export const About = () => {
                 })}
               </tbody>
             </table>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3>Technologies I Use:</h3>
+          </Col>
+
+          <Col lg="7">
+            <div className="icon-container">
+              <FontAwesomeIcon icon={faHtml5} className="icon icon-html" />
+              <FontAwesomeIcon icon={faCss3} className="icon icon-css" />
+              <FontAwesomeIcon icon={faJs} className="icon icon-js" />
+              <FontAwesomeIcon icon={faReact} className="icon icon-react" />
+              <FontAwesomeIcon icon={faNode} className="icon icon-node" />
+              <FontAwesomeIcon icon={faGit} className="icon icon-git" />
+              <FontAwesomeIcon icon={faGithub} className="icon icon-github" />
+              <FontAwesomeIcon icon={faNpm} className="icon icon-npm" />
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">

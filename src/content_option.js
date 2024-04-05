@@ -1,9 +1,9 @@
-import img from "./me5.webp";
-import logo from "./img.png";
-import img2 from "./thewiggleapp.png";
-import img3 from "./djpage.png";
-import img4 from "./hypernetwork.png";
-import img5 from "./hyperflapper.png";
+import img from "./assets/images/me5.webp";
+import logo from "./assets/images/img.png";
+import img2 from "./assets/images/thewiggleapp.png";
+import img3 from "./assets/images/djpage.png";
+import img4 from "./assets/images/hypernetwork.png";
+import img5 from "./assets/images/hyperflapper.png";
 
 const logotext = "AHMED SHARIF";
 const logoimg = logo;
