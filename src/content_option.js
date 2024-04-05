@@ -1,9 +1,14 @@
 import img from "./assets/images/me5.webp";
 import logo from "./assets/images/img.png";
-import img2 from "./assets/images/thewiggleapp.png";
-import img3 from "./assets/images/djpage.png";
-import img4 from "./assets/images/hypernetwork.png";
-import img5 from "./assets/images/hyperflapper.png";
+import img2 from "./assets/images/thewiggleapp.webp";
+import img3 from "./assets/images/djpage.webp";
+import img4 from "./assets/images/hypernetwork.webp";
+import img5 from "./assets/images/hyperflapper.webp";
+import img6 from "./assets/images/guessing.webp";
+import img7 from "./assets/images/tictactoe.webp";
+import img8 from "./assets/images/fylo.webp";
+import img9 from "./assets/images/issue-tracker.webp";
+import img10 from "./assets/images/frimark.webp";
 
 const logotext = "AHMED SHARIF";
 const logoimg = logo;
@@ -102,73 +107,65 @@ const dataportfolio = [
     img: img3,
     description: "I built a Website for Djs",
     link: "https://dj-jusuf.netlify.app/",
+    github: "https://github.com/Sheriff702/Dj-Jusuf",
   },
   {
-    img: "https://zippy-parfait-feebde.netlify.app/clothes/rainbowsweatshirt.webp",
+    img: img10,
     description:
       "Introducing Frimark, your go-to children's clothing store! Find the best outfits for your little ones at our React-based PWA. Shop conveniently on the web, Android, and iOS platforms.",
     link: "https://zippy-parfait-feebde.netlify.app/",
+    github: "https://github.com/Quantinx/childrensClothesStore",
   },
   {
     img: img4,
     description:
       "Its a website i built for a company called Hypernetwork. The website is built with react. The website is available on Web and both android and ios.",
     link: "https://hypernetworkfed25.github.io/hypernetwork",
+    github: "https://github.com/hypernetworkfed25/hypernetwork",
   },
   {
     img: img5,
     description:
       "this is a game we developed. The game is called Hyperflapper. It's a game where you can play and compete with your friends. The game is available on Web only ",
     link: "https://simon-rosengren.github.io/Group-8-Project/",
+    github: "https://github.com/simon-rosengren/Group-8-Project",
   },
   {
     img: img2,
     description:
       "Introducing The Wiggle App, your ultimate nightlife companion! Discover the hottest parties, events, clubs, and bars in your city. Available on Android and iOS.",
     link: "https://thewiggleapp.com/",
+    github: "",
+    description2:
+      "This app i can not show you the code because it's a company project",
   },
 
   {
-    img: "https://picsum.photos/400/700/?grayscale",
+    img: img6,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "A little fun guessing game i built. The game is built with Javascript",
+    link: "https://sheriff702.github.io/javascript/",
+    github: "https://github.com/Sheriff702/javascript",
   },
 
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: img7,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "A little Tic Tac Toe game i built. The game is built with React",
+    link: "https://main--tictagame.netlify.app/",
+    github: "https://github.com/Sheriff702/tic-tac-toe",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "The wisdom of lthe elimination-essentials.",
-    link: "#",
+    img: img8,
+    description: "A landing page i built with HTML and CSS",
+    link: "https://main--fylooland.netlify.app/",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: img9,
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "A Issue tracker me and my classmates built with backend. It is build in NEXT.js and the backend is build with Node.js and postgresql.",
+    link: "https://issuetracker-team8.vercel.app/",
+    github: "https://github.com/arixstudio/issue-tracker",
   },
 ];
 
