@@ -51,7 +51,6 @@ export const Home = () => {
               className="profilbild"
               src={introdata.your_img_url} // Make sure this path is correct
               alt="ProfilePicture"
-              loading="lazy"
             />
           </div>
         </div>

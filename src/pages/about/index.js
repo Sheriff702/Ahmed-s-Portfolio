@@ -113,7 +113,7 @@ export const About = () => {
               />
               <FontAwesomeIcon
                 icon={faGit}
-                className="icon icon-git icon-rotate"
+                className="icon icon-git icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faGithub}
