@@ -10,10 +10,7 @@ import {
   services,
 } from "../../content_option";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faScroll,
-  faMoneyCheckDollar,
-} from "@fortawesome/free-solid-svg-icons";
+
 import {
   faHtml5,
   faCss3,
