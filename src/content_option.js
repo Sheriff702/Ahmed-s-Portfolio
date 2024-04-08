@@ -1,5 +1,5 @@
 import img from "./assets/images/me5.webp";
-import logo from "./assets/images/img.png";
+import logo from "./assets/images/logo.svg";
 import img2 from "./assets/images/thewiggleapp.webp";
 import img3 from "./assets/images/djpage.webp";
 import img4 from "./assets/images/hypernetwork.webp";
@@ -22,7 +22,7 @@ const introdata = {
   title: "I’m Ahmed Sharif",
   animated: {
     first: "And I Love Coding",
-    second: "I Also Code Cool Websites",
+    second: "I Code Cool Websites",
     third: "I Develop Mobile Apps",
     forth: "And I'm Just Cool",
   },

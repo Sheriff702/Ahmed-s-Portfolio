@@ -97,3 +97,128 @@
     transform: translateZ(0);
   }
 }
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* This will organize your icons into three columns */
+  gap: 20px; /* This adds a 20px gap between your icons */
+  justify-content: space-around; /* This adds space around your icons, centering them in their grid cells */
+}
+
+.icon {
+  font-size: 4em; /* Makes the icons larger */
+  margin: 0 10px; /* Adds a 10px margin to the left and right of each icon */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the icons */
+  transition: transform 0.2s; /* Smoothens the transformation effects */
+}
+
+/* Icon-specific colors */
+.icon-html {
+  color: #e34f26;
+}
+.icon-css {
+  color: #1572b6;
+}
+.icon-js {
+  color: #f7df1e;
+}
+.icon-react {
+  color: #61dbfb;
+}
+.icon-node {
+  color: #68a063;
+}
+.icon-git {
+  color: #f1502f;
+}
+.icon-github {
+  color: #ffffff;
+}
+.icon-npm {
+  color: #cb3837;
+}
+.icon-yarn {
+  color: #2c8ebb;
+}
+.icon-trello {
+  color: #0079bf;
+}
+.icon-figma {
+  color: #f24e1e;
+}
+
+/* Animations */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes sideToSideAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.icon-float {
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+.icon-side-to-side {
+  animation: sideToSideAnimation 2s ease-in-out infinite;
+}
+
+/* Rotation Animation */
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-rotate {
+  animation: rotateAnimation 4s linear infinite;
+}
+
+/* Scaling Animation */
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.icon-scale {
+  animation: scaleAnimation 2s ease-in-out infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounceAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.icon-bounce {
+  animation: bounceAnimation 2s ease-in-out infinite;
+}

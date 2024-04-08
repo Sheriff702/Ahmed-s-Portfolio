@@ -11,6 +11,10 @@ import {
 } from "../../content_option";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faScroll,
+  faMoneyCheckDollar,
+} from "@fortawesome/free-solid-svg-icons";
+import {
   faHtml5,
   faCss3,
   faJs,
@@ -19,6 +23,9 @@ import {
   faGit,
   faGithub,
   faNpm,
+  faTrello,
+  faFigma,
+  faYarn,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const About = () => {
@@ -84,14 +91,50 @@ export const About = () => {
 
           <Col lg="7">
             <div className="icon-container">
-              <FontAwesomeIcon icon={faHtml5} className="icon icon-html" />
-              <FontAwesomeIcon icon={faCss3} className="icon icon-css" />
-              <FontAwesomeIcon icon={faJs} className="icon icon-js" />
-              <FontAwesomeIcon icon={faReact} className="icon icon-react" />
-              <FontAwesomeIcon icon={faNode} className="icon icon-node" />
-              <FontAwesomeIcon icon={faGit} className="icon icon-git" />
-              <FontAwesomeIcon icon={faGithub} className="icon icon-github" />
-              <FontAwesomeIcon icon={faNpm} className="icon icon-npm" />
+              <FontAwesomeIcon
+                icon={faHtml5}
+                className="icon icon-html icon-rotate"
+              />
+              <FontAwesomeIcon
+                icon={faCss3}
+                className="icon icon-css icon-scale"
+              />
+              <FontAwesomeIcon
+                icon={faJs}
+                className="icon icon-js icon-bounce"
+              />
+              <FontAwesomeIcon
+                icon={faReact}
+                className="icon icon-react icon-rotate"
+              />
+              <FontAwesomeIcon
+                icon={faNode}
+                className="icon icon-node icon-side-to-side"
+              />
+              <FontAwesomeIcon
+                icon={faGit}
+                className="icon icon-git icon-rotate"
+              />
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="icon icon-github icon-scale"
+              />
+              <FontAwesomeIcon
+                icon={faNpm}
+                className="icon icon-npm icon-bounce"
+              />
+              <FontAwesomeIcon
+                icon={faTrello}
+                className="icon icon-trello icon-rotate"
+              />
+              <FontAwesomeIcon
+                icon={faFigma}
+                className="icon icon-figma icon-scale"
+              />
+              <FontAwesomeIcon
+                icon={faYarn}
+                className="icon icon-yarn icon-rotate"
+              />
             </div>
           </Col>
         </Row>

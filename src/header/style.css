@@ -6,6 +6,7 @@
 
 .menu__button {
   color: var(--text-color);
+  background: var(--primary-color);
 }
 
 .menu__button:focus,
@@ -25,7 +26,7 @@
   padding: 5px 15px;
   margin: 0;
   border: unset;
-  background: var(--primary-color);
+
   font-size: 1.25rem;
   font-family: Marcellus;
   color: var(--text-color-2);
@@ -35,8 +36,8 @@
   z-index: 1000;
 }
 .navbarlogo {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: auto;
 }
 .logoimgs {
   width: 100%;
