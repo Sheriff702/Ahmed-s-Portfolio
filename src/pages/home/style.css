@@ -32,7 +32,6 @@
   height: 100vh;
   width: 100%;
   padding-right: 5rem;
-  display: flex; /* Use flex to align the image if needed */
 }
 .inner-boxen {
   height: 100%; /* Fixed height of the container */
@@ -48,7 +47,6 @@
 .profilbild {
   width: auto; /* Maintain the original width to avoid stretching */
   height: 150%; /* Make the image fill the container's height */
-
   object-fit: cover; /* This will ensure the image covers the area without stretching */
   object-position: bottom; /* Adjust to focus on the desired area */
 }
@@ -142,8 +140,24 @@
     height: auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+  }
+  .inner-boxen {
+    display: flex;
+    width: 170%;
+    height: 100%;
+  }
+
+  /* Specific styles for the image */
+  .profilbild {
+    width: 100%; /* Maintain the original width to avoid stretching */
+    height: 200%; /* Make the image fill the container's height */
+    object-fit: cover; /* This will ensure the image covers the area without stretching */
+    object-position: bottom; /* Adjust to focus on the desired area */
+    align-items: center;
+    margin-right: 70px;
   }
   .intro_sec {
     padding-left: 0;
@@ -164,25 +178,23 @@
   .boxen {
     order: 1;
     width: 100%;
-    align-items: center;
+    height: 400px;
     margin-bottom: 20px;
-    justify-content: center;
     margin-right: 0;
   }
   .inner-boxen {
-    overflow: hidden; /* Hide overflow to crop the image */
     display: flex;
-    flex-wrap: wrap;
-    align-items: start; /* This will vertically align the image to the center */
-    justify-content: center; /* This will horizontally align the image */
+    width: 170%;
+    height: 100%;
   }
 
   /* Specific styles for the image */
   .profilbild {
     width: 100%; /* Maintain the original width to avoid stretching */
-    height: 100%; /* Make the image fill the container's height */
+    height: 200%; /* Make the image fill the container's height */
     object-fit: cover; /* This will ensure the image covers the area without stretching */
     object-position: bottom; /* Adjust to focus on the desired area */
+    align-items: center;
   }
   .intro_sec {
     padding: 0;

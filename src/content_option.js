@@ -27,7 +27,7 @@ const introdata = {
     forth: "And I'm Just Cool",
   },
   description:
-    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe",
+    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe ",
   your_img_url: img,
 };
 
