@@ -34,7 +34,7 @@ const introdata = {
 const dataabout = {
   title: "About Moi",
   aboutme:
-    "👋  Hey, I'm Ahmed Sharif - a 30-year-old guy with a passion for innovation and creativity. Currently, I'm rocking the role of Chief Technology Officer (CTO) at [Your Company], a venture I co-founded to bring groundbreaking ideas to life.",
+    "👋  Hey, I'm Ahmed Sharif - a 30-year-old guy with a passion for innovation and creativity. Currently, I'm rocking the role of Chief Technology Officer (CTO) at Local Le Swued AB, a venture I co-founded to bring groundbreaking ideas to life.",
 
   aboutme2:
     "🚀 My journey has been anything but conventional. While my days are filled with coding and leading tech initiatives, my nights used to resonate with beats as I spent 13 memorable years as a DJ. Music has been an integral part of my life, shaping not only my evenings but also influencing my approach to problem-solving and creativity.",
