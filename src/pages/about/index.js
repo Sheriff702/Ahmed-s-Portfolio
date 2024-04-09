@@ -16,6 +16,7 @@ import ExpressJS from "./../../assets/images/expressJS.png";
 import BootStrap from "./../../assets/images/bootstrap.png";
 import NextJS from "./../../assets/images/nextJS.png";
 import tailwindCSS from "./../../assets/images/tailwindCSS.png";
+import SEO from "./../../assets/images/SEO.png";
 import {
   faHtml5,
   faCss3,
@@ -150,6 +151,11 @@ export const About = () => {
               <img
                 src={Postman}
                 className="icon custom-icon-class"
+                alt="Custom Icon"
+              />
+              <img
+                src={SEO}
+                className="icon custom-icon-class2"
                 alt="Custom Icon"
               />
               <img
