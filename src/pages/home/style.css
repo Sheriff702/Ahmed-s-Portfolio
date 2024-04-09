@@ -126,7 +126,8 @@
 #button_h:hover {
   color: var(--secondary-color);
 }
-@media (max-width: 990px) {
+
+@media (max-width: 1100px) {
   .home {
     padding: 0 5%;
     grid-template-columns: 1fr; /* Change to single column layout */
@@ -149,6 +150,7 @@
     padding-right: 0;
   }
   .intro_btn-action {
+    display: flex;
     justify-content: center;
     margin-top: 2rem;
   }
