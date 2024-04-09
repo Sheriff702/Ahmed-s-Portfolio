@@ -10,7 +10,12 @@ import {
   services,
 } from "../../content_option";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Postgree from "./../../assets/images/postgresql.png";
+import Postman from "./../../assets/images/postman.png";
+import ExpressJS from "./../../assets/images/expressJS.png";
+import BootStrap from "./../../assets/images/bootstrap.png";
+import NextJS from "./../../assets/images/nextJS.png";
+import tailwindCSS from "./../../assets/images/tailwindCSS.png";
 import {
   faHtml5,
   faCss3,
@@ -131,6 +136,36 @@ export const About = () => {
               <FontAwesomeIcon
                 icon={faYarn}
                 className="icon icon-yarn icon-rotate"
+              />
+              <img
+                src={Postgree}
+                className="icon custom-icon-class"
+                alt="Custom Icon"
+              />
+              <img
+                src={Postman}
+                className="icon custom-icon-class"
+                alt="Custom Icon"
+              />
+              <img
+                src={ExpressJS}
+                className="icon custom-icon-class2"
+                alt="Custom Icon"
+              />
+              <img
+                src={BootStrap}
+                className="icon custom-icon-class4"
+                alt="Custom Icon"
+              />
+              <img
+                src={NextJS}
+                className="icon custom-icon-class3"
+                alt="Custom Icon"
+              />
+              <img
+                src={tailwindCSS}
+                className="icon custom-icon-class5"
+                alt="Custom Icon"
               />
             </div>
           </Col>
