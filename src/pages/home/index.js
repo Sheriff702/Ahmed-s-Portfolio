@@ -38,9 +38,9 @@ export const Home = () => {
                 My Portfolio
               </div>
             </Link>
-            <Link to="/contact">
+            <Link to="/about">
               <div id="button_h" className="ac_btn btn">
-                Contact Me
+                About Moi
               </div>
             </Link>
           </div>
