@@ -97,15 +97,103 @@
     transform: translateZ(0);
   }
 }
+@media (max-width: 1100px) {
+  .service-section .service-category-title {
+    padding-bottom: 4px;
+  }
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* This will organize your icons into three columns */
+    gap: 20px; /* This adds a 20px gap between your icons */
+    padding-left: 10px;
+  }
+  /* Animations */
+  @keyframes floatAnimation {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
-.icon-container {
-  display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* This will organize your icons into three columns */
-  gap: 20px; /* This adds a 20px gap between your icons */
-  justify-content: space-around; /* This adds space around your icons, centering them in their grid cells */
+  @keyframes sideToSideAnimation {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+  .custom-icon-class4,
+  .icon-float {
+    animation: floatAnimation 2s ease-in-out infinite;
+  }
+
+  .custom-icon-class2,
+  .icon-side-to-side {
+    animation: sideToSideAnimation 2s ease-in-out infinite;
+  }
+  .custom-icon-class5 {
+    animation: bounceAnimation 2s ease-in-out infinite;
+  }
+
+  /* Bounce Animation */
+  @keyframes bounceAnimation {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Rotation Animation */
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .icon-rotate {
+    animation: rotateAnimation 4s linear infinite;
+  }
+
+  /* Scaling Animation */
+  @keyframes scaleAnimation {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+
+  .custom-icon-class3,
+  .icon-scale {
+    animation: scaleAnimation 2s ease-in-out infinite;
+  }
+
+  .custom-icon-class,
+  .icon-bounce {
+    animation: bounceAnimation 2s ease-in-out infinite;
+  }
 }
 
 .icon {
@@ -150,91 +238,6 @@
   color: #f24e1e;
 }
 
-/* Animations */
-@keyframes floatAnimation {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes sideToSideAnimation {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-}
-.custom-icon-class4,
-.icon-float {
-  animation: floatAnimation 2s ease-in-out infinite;
-}
-
-.custom-icon-class2,
-.icon-side-to-side {
-  animation: sideToSideAnimation 2s ease-in-out infinite;
-}
-.custom-icon-class5 {
-  animation: bounceAnimation 2s ease-in-out infinite;
-}
-
-/* Bounce Animation */
-@keyframes bounceAnimation {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-/* Rotation Animation */
-@keyframes rotateAnimation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.icon-rotate {
-  animation: rotateAnimation 4s linear infinite;
-}
-
-/* Scaling Animation */
-@keyframes scaleAnimation {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-}
-
-.custom-icon-class3,
-.icon-scale {
-  animation: scaleAnimation 2s ease-in-out infinite;
-}
-
-.custom-icon-class,
-.icon-bounce {
-  animation: bounceAnimation 2s ease-in-out infinite;
-}
-
 .custom-icon-class {
   width: 5rem;
   height: auto;
@@ -262,4 +265,21 @@
   border-radius: 7%;
   padding-bottom: 4px;
   height: auto;
+}
+.custom-icon-class,
+.custom-icon-class2,
+.custom-icon-class3,
+.custom-icon-class4,
+.custom-icon-class5,
+.icon-side-to-side {
+  animation: sideToSideAnimation 2s ease-in-out infinite;
+}
+@keyframes sideToSideAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
 }

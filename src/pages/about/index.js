@@ -95,19 +95,19 @@ export const About = () => {
             <div className="icon-container">
               <FontAwesomeIcon
                 icon={faHtml5}
-                className="icon icon-html icon-rotate"
+                className="icon icon-html icon-rotate icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faCss3}
-                className="icon icon-css icon-scale"
+                className="icon icon-css icon-scale icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faJs}
-                className="icon icon-js icon-bounce"
+                className="icon icon-js icon-bounce icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faReact}
-                className="icon icon-react icon-rotate"
+                className="icon icon-react icon-rotate icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faNode}
@@ -119,37 +119,37 @@ export const About = () => {
               />
               <FontAwesomeIcon
                 icon={faGithub}
-                className="icon icon-github icon-scale"
+                className="icon icon-github icon-scale icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faNpm}
-                className="icon icon-npm icon-bounce"
+                className="icon icon-npm icon-bounce icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faTrello}
-                className="icon icon-trello icon-rotate"
+                className="icon icon-trello icon-rotate icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faFigma}
-                className="icon icon-figma icon-scale"
+                className="icon icon-figma icon-scale icon-side-to-side"
               />
               <FontAwesomeIcon
                 icon={faYarn}
-                className="icon icon-yarn icon-rotate"
+                className="icon icon-yarn icon-rotate icon-side-to-side"
               />
               <img
                 src={Postgree}
                 className="icon custom-icon-class"
                 alt="Custom Icon"
+              />{" "}
+              <img
+                src={ExpressJS}
+                className="icon custom-icon-class2"
+                alt="Custom Icon"
               />
               <img
                 src={Postman}
                 className="icon custom-icon-class"
-                alt="Custom Icon"
-              />
-              <img
-                src={ExpressJS}
-                className="icon custom-icon-class2"
                 alt="Custom Icon"
               />
               <img

@@ -24,7 +24,7 @@
   right: 0;
   top: 0;
   transform: translateY(-130%);
-  transition: all 400ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 @media (min-width: 1400px) {
