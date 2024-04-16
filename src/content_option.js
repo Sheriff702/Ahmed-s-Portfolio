@@ -67,20 +67,33 @@ const skills = [
     value: 100,
   },
   {
+    name: "Photoshop",
+    value: 100,
+  },
+  {
     name: "Javascript",
+    value: 95,
+  },
+  {
+    name: "Figma",
     value: 90,
   },
   {
     name: "React",
+    value: 85,
+  },
+  {
+    name: "Tailwindcss",
     value: 75,
   },
   {
     name: "node.js",
-    value: 60,
+    value: 65,
   },
+
   {
-    name: "Photoshop",
-    value: 85,
+    name: "Next.js",
+    value: 50,
   },
 ];
 
