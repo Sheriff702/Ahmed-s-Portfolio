@@ -9,6 +9,8 @@ import img7 from "./assets/images/tictactoe.webp";
 import img8 from "./assets/images/fylo.webp";
 import img9 from "./assets/images/issue-tracker.webp";
 import img10 from "./assets/images/frimark.webp";
+import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
+import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
 const logotext = "AHMED SHARIF";
 const logoimg = logo;
@@ -182,6 +184,11 @@ const dataportfolio = [
   },
 ];
 
+const CV = {
+  cvenglish: cvenglish,
+  cvswedish: cvswedish,
+};
+
 const contactConfig = {
   YOUR_EMAIL: "Ahmedsheriffbooking@gmail.com",
   YOUR_FONE: "+46 (0)76 066 47 54",
@@ -200,6 +207,7 @@ const socialprofils = {
   twitter: "https://twitter.com/svarta_shunon",
 };
 export {
+  CV,
   meta,
   dataabout,
   dataportfolio,

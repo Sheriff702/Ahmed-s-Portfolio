@@ -49,6 +49,7 @@
   height: auto; /* Height auto to maintain aspect ratio */
   object-fit: cover; /* Cover the area without stretching */
   object-position: center; /* Center the image within the container */
+  transform: scaleX(-1);
 }
 
 .ac_btn {
@@ -122,11 +123,64 @@
   background: var(--secondary-color);
   color: var(--primary-color);
 }
-
+#button_p:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
 #button_h:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+#button_c {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+#button_c:hover {
+  background: var(--third-color);
   color: var(--secondary-color);
 }
 
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
+
+.modal-content {
+  background-color: var(--primary-color); /* Green background */
+  color: var(--secondary-color); /* Red text color */
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as necessary */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: red; /* Red close button for consistency */
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: darkred; /* Darker red on hover/focus */
+  text-decoration: none;
+}
 @media (max-width: 1100px) {
   .home {
     padding: 0 5%;
@@ -153,5 +207,18 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 1em;
+  }
+
+  .close {
+    font-size: 1.5em;
+    top: 1em;
+    right: 1em;
   }
 }
