@@ -28,9 +28,9 @@
   flex-wrap: wrap-reverse;
 
   order: 2; /* Ensure image is second */
-  height: 90vh;
+  height: 95vh;
   width: 100%;
-  padding-right: 5rem;
+  padding-right: 10rem;
 }
 .inner-boxen {
   height: 100%; /* Fixed height of the container */

@@ -37,27 +37,12 @@
     max-width: 1140px;
   }
 }
-/* Define the keyframes for the moving background animation */
-@keyframes movingBackground {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+.bubbles {
+  width: 100%;
+  height: 100%;
 }
+.span {
+  position: absolute;
 
-/* Apply the animation for mobile screens */
-@media only screen and (max-width: 991px) {
-  body {
-    /* Adjust the color stops to suit your color scheme */
-    background: -o-linear-gradient(90deg, #000000, #63ffff, #2a2a2a, #000000);
-    background-size: 400% 400%;
-    animation: movingBackground 5s linear infinite;
-  }
+  opacity: 0.75;
 }
-
-/* Other existing styles... */
