@@ -19,14 +19,16 @@ const meta = {
   description:
     "I’m Ahmed Sharif and im a frontend developer and designer. I love coding and i code cool websites. I develop mobile apps. I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites.",
 };
+const CopyRight = {
+  year: "2023",
+};
 
 const introdata = {
-  title: "I’m Ahmed Sharif",
+  title: "I’m Ahmed Sharif and i",
   animated: {
-    first: "And I Love Coding",
-    second: "I Code Cool Websites",
-    third: "I Develop Mobile Apps",
-    forth: "And I'm Just Cool",
+    first: "I Love Coding",
+    second: "Code Cool Websites",
+    third: "Develop Mobile Apps",
   },
   description:
     "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe ",
@@ -207,6 +209,7 @@ const socialprofils = {
   twitter: "https://twitter.com/svarta_shunon",
 };
 export {
+  CopyRight,
   CV,
   meta,
   dataabout,

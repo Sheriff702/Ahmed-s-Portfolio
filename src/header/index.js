@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logoimg, logotext, socialprofils } from "../content_option";
+import { CopyRight, logoimg, logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -81,7 +81,9 @@ const Headermain = () => {
                 Twitter
               </a>
             </div>
-            <p className="copyright m-0">copyright: {logotext}</p>
+            <p className="copyright m-0">
+              copyright: {CopyRight.year} {logotext}
+            </p>
           </div>
         </div>
       </header>

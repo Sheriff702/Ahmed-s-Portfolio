@@ -59,8 +59,8 @@ export default function App() {
             style={{
               width: `${s.size}rem`,
               height: `${s.size}rem`,
-              animation: `${s.animationName} 100s linear infinite`, // Longer duration for smoother transition
-              boxShadow: "0px 0px 20px 10px rgba(101, 163, 13, 0.75)", // Significant light green shadow
+              animation: `${s.animationName} 30s linear infinite`, // Longer duration for smoother transition
+              boxShadow: "0px 0px 20px 10px rgba(10, 120, 173, 0.85)", // Significant light green shadow
             }}
           />
         ))}
