@@ -9,6 +9,7 @@ import img7 from "./assets/images/tictactoe.webp";
 import img8 from "./assets/images/fylo.webp";
 import img9 from "./assets/images/issue-tracker.webp";
 import img10 from "./assets/images/frimark.webp";
+import img11 from "./assets/images/Pondeo.png";
 import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
 import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
@@ -24,14 +25,14 @@ const CopyRight = {
 };
 
 const introdata = {
-  title: "I’m Ahmed Sharif and i",
+  title: "I’m Ahmed Sharif and I",
   animated: {
-    first: "I Love Coding",
+    first: "Love Coding",
     second: "Code Cool Websites",
-    third: "Develop Mobile Apps",
+    third: " Develop Mobile Apps",
   },
   description:
-    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe ",
+    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites... Atleast that's what i believe 😉 ",
   your_img_url: img,
 };
 
@@ -183,6 +184,12 @@ const dataportfolio = [
       "A Issue tracker me and my classmates built with backend. It is build in NEXT.js and the backend is build with Node.js and postgresql.",
     link: "https://issuetracker-team8.vercel.app/",
     github: "https://github.com/arixstudio/issue-tracker",
+  },
+  {
+    img: img11,
+    description:
+      "We had a project where we had to build a website for a company. The website is built with React. OBS: I can not give you the code because it's a company project",
+    link: "https://group10pondeo.netlify.app/",
   },
 ];
 
