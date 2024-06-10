@@ -10,6 +10,7 @@ import img8 from "./assets/images/fylo.webp";
 import img9 from "./assets/images/issue-tracker.webp";
 import img10 from "./assets/images/frimark.webp";
 import img11 from "./assets/images/Pondeo.png";
+import img12 from "./assets/images/Moon.png";
 import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
 import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
@@ -190,6 +191,12 @@ const dataportfolio = [
     description:
       "We had a project where we had to build a website for a company. The website is built with React. OBS: I can not give you the code because it's a company project",
     link: "https://group10pondeo.netlify.app/",
+  },
+  {
+    img: img12,
+    description: `  I'm glad to share a website we built for our "Explore Code" course with my amazing classmates. This website will take you through the fascinating history of space. 
+    (For the best visualisation, please use a desktop.) I can not share the code because it's a group project`,
+    link: "https://hyperispace.github.io/artemareon/",
   },
 ];
 
