@@ -1,96 +1,44 @@
-section {
-  flex: 1 0 auto;
-  position: relative;
-  width: 100%;
-  -webkit-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
+/* Global Styles */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between; /* Add space between text and image */
 
-.who_am_I {
-  font-family: Cinzel;
-}
-
-.has-first-color {
-  color: var(--primary-color);
-}
-
-.btn-portfolio {
-  background: var(--primary-color);
-  border-radius: 0;
-}
-
-.btn-portfolio a {
-  color: #000;
-  text-decoration: none;
-}
-
-.btn-about a {
-  color: var(--text-color);
-  text-decoration: none;
+  padding: 0 5%; /* Add padding on the sides */
 }
 
 .intro_sec {
-  height: calc(100vh - 60px);
-  min-height: 700px;
-  height: 100vh;
-  margin-top: -60px;
+  display: flex-column;
+  justify-content: end;
+  padding-left: 200px;
+  flex: 1;
+  max-width: 100%;
 }
 
-@media (max-width: 991.98px) {
-  .intro_sec {
-    display: block;
-    height: auto !important;
-  }
+.mb-1x {
+  margin-bottom: 1rem;
 }
+.boxen {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
 
-.intro_sec .text,
-.intro_sec .h_bg-image {
-  width: 50%;
+  order: 2; /* Ensure image is second */
+  height: auto;
+  width: 800px;
+  margin-right: 10rem;
+
+  display: flex; /* Use flex to align the image if needed */
+  align-items: start; /* This will vertically align the image in the container */
 }
-
-@media (max-width: 991.98px) {
-  .intro_sec .text,
-  .intro_sec .h_bg-image {
-    width: 100%;
-  }
-}
-
-.intro_sec .intro {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-@media (max-width: 991.98px) {
-  .intro_sec .intro {
-    max-width: 700px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.intro_sec .intro .feature .wrap-icon svg {
-  color: #5cccc9;
-}
-
-.intro_sec .text h1 {
-  font-size: 30px;
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-.intro_sec .text h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.intro_sec .h_bg-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: end;
-  min-height: 700px;
-  position: relative;
-  padding-right: 100px;
+.profilbild {
+  display: flexbox;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .ac_btn {
@@ -166,107 +114,64 @@ section {
 }
 
 #button_h:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
-
-.intro_sec .h_bg-image .block {
-  bottom: 50vh;
-  max-width: 220px;
-  padding: 30px;
-  left: -110px;
-  position: absolute;
-  width: 250px;
-  height: 220px;
-  border-radius: 100%;
-  /* mix-blend-mode: multiply; */
-  background-color: #2f514e;
-  z-index: 9999999999;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 991.98px) {
-  .intro_sec .h_bg-image {
-    height: 600px;
-    min-height: 75vh;
-    margin-bottom: 30px;
-  }
-  .intro_sec .h_bg-image .block {
-    top: unset;
-    bottom: 0;
+@media (max-width: 1450px) {
+  .boxen {
+    order: 1;
+    height: auto;
     width: 100%;
-    margin: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .intro_sec {
+    padding-left: 0px;
+    padding-right: 0px;
+    order: 2;
+    flex: 1;
+    max-width: 100%;
   }
 }
 
-.intro_sec .h_bg-image .block .wrap-icon {
-  font-size: 40px;
-  color: var(--text-color);
-  margin-bottom: 10px;
-  display: block;
-}
+@media (max-width: 990px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between; /* Add space between text and image */
 
-.intro_sec .h_bg-image .block h3 {
-  font-size: 14px;
-  color: var(--text-color);
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
+    padding: 0 5%; /* Add padding on the sides */
+  }
+  .boxen {
+    order: 1;
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .intro_sec {
+    padding-left: 0px;
+    padding-right: 0px;
+    order: 2;
+    flex: 1;
+    max-width: 100%;
+  }
 
-.intro_sec .h_bg-image .block p {
-  font-size: 14px;
-  line-height: 1.3;
-  color: var(--text-color);
-}
+  .mb-1x {
+    padding-right: 0rem;
+  }
 
-.intro_sec .h_bg-image {
-  filter: saturate(0.5);
-}
-
-.icon-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* This will make your icons appear in a row */
-  gap: 20px; /* This will add a 20px gap between your icons */
-  justify-content: space-around; /* This will add space between your icons */
-}
-
-.icon {
-  font-size: 4em; /* This will make your icons larger */
-  margin: 0 10px; /* This will add a 10px margin to the left and right of each icon */
-}
-.icon-html {
-  color: #e34f26; /* HTML5 color */
-}
-
-.icon-css {
-  color: #1572b6; /* CSS3 color */
-}
-
-.icon-js {
-  color: #f7df1e; /* JavaScript color */
-}
-
-.icon-react {
-  color: #61dbfb; /* React color */
-}
-
-.icon-node {
-  color: #68a063; /* Node.js color */
-}
-
-.icon-git {
-  color: #f1502f; /* Git color */
-}
-
-.icon-github {
-  color: #ffffff; /* GitHub color */
-}
-
-.icon-npm {
-  color: #cb3837; /* npm color */
+  .intro_btn-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 }

@@ -1,4 +1,4 @@
-import img from "./assets/images/me5.webp";
+import img from "./assets/images/ahmed.png";
 import logo from "./assets/images/img.png";
 import img2 from "./assets/images/thewiggleapp.webp";
 import img3 from "./assets/images/djpage.webp";
