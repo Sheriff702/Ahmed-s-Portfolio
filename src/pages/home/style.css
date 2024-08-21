@@ -112,66 +112,103 @@
   background: var(--secondary-color);
   color: var(--primary-color);
 }
-
-#button_h:hover {
+#button_p:hover {
+  background: var(--primary-color);
   color: var(--secondary-color);
 }
-@media (max-width: 1450px) {
-  .boxen {
-    order: 1;
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .intro_sec {
-    padding-left: 0px;
-    padding-right: 0px;
-    order: 2;
-    flex: 1;
-    max-width: 100%;
-  }
+#button_h:hover {
+  background: var(--secondary-color);
+  color: var(--secondary-color);
+}
+#button_c {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 10px;
+}
+#button_c:hover {
+  background: var(--third-color);
+  color: var(--secondary-color);
 }
 
-@media (max-width: 990px) {
-  .home {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: space-between; /* Add space between text and image */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
 
-    padding: 0 5%; /* Add padding on the sides */
+.modal-content {
+  background-color: var(--primary-color); /* Green background */
+  color: var(--secondary-color); /* Red text color */
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as necessary */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: red; /* Red close button for consistency */
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: darkred; /* Darker red on hover/focus */
+  text-decoration: none;
+}
+@media (max-width: 1100px) {
+  .home {
+    padding: 0 5%;
+    grid-template-columns: 1fr; /* Change to single column layout */
   }
   .boxen {
     order: 1;
-    height: auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    justify-content: center;
-    margin-right: 0;
+    width: 100%; /* Use full width of the viewport */
+    height: auto; /* Auto height */
+  }
+  .inner-boxen {
+    width: 100%; /* Fit to the width of .boxen */
   }
   .intro_sec {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0; /* Remove padding for smaller screens */
     order: 2;
     flex: 1;
-    max-width: 100%;
+    max-width: 100%; /* Full width for smaller screens */
   }
-
   .mb-1x {
-    padding-right: 0rem;
+    padding-right: 0;
   }
-
   .intro_btn-action {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 1em;
+  }
+
+  .close {
+    font-size: 1.5em;
+    top: 1em;
+    right: 1em;
   }
 }

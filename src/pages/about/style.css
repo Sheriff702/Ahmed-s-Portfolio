@@ -12,10 +12,11 @@
 }
 
 .progress-title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin: 15px 0 20px;
   font-family: "Raleway";
+  color: pink;
 }
 
 .progress {
@@ -30,7 +31,7 @@
 .progress .progress-bar {
   position: relative;
   background: var(--text-color);
-  animation: animate-positive 2s;
+  animation: animate-positive 5s;
   overflow: visible;
   opacity: 0.9;
 }
@@ -95,5 +96,143 @@
     opacity: 1;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+  }
+}
+@media (max-width: 748px) {
+  .custom-icon-class5 {
+    width: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .service-section .service-category-title {
+    padding-bottom: 4px;
+  }
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* This will organize your icons into three columns */
+    gap: 20px; /* This adds a 20px gap between your icons */
+    padding-left: 10px;
+  }
+  /* Animations */
+  /* Side-to-Side Animation */
+  @keyframes sideToSideAnimation {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+
+  .custom-icon-class2,
+  .icon-side-to-side {
+    animation: sideToSideAnimation 2s ease-in-out infinite;
+  }
+
+  /* Rotation Animation */
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .icon-rotate {
+    animation: rotateAnimation 4s linear infinite;
+  }
+}
+
+.icon {
+  font-size: 4em; /* Makes the icons larger */
+  margin: 0 10px; /* Adds a 10px margin to the left and right of each icon */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the icons */
+  transition: transform 0.2s; /* Smoothens the transformation effects */
+}
+
+/* Icon-specific colors */
+.icon-html {
+  color: #e34f26;
+}
+.icon-css {
+  color: #1572b6;
+}
+.icon-js {
+  color: #f7df1e;
+}
+.icon-react {
+  color: #61dbfb;
+}
+.icon-node {
+  color: #68a063;
+}
+.icon-git {
+  color: #f1502f;
+}
+.icon-github {
+  color: #ffffff;
+}
+.icon-npm {
+  color: #cb3837;
+}
+.icon-yarn {
+  color: #2c8ebb;
+}
+.icon-trello {
+  color: #0079bf;
+}
+.icon-figma {
+  color: #f24e1e;
+}
+
+.custom-icon-class {
+  width: 5rem;
+  height: auto;
+}
+.custom-icon-class2 {
+  width: 10rem;
+
+  height: auto;
+}
+.custom-icon-class3 {
+  background-color: white;
+  border-radius: 50%;
+  width: 5rem;
+  height: auto;
+}
+.custom-icon-class4 {
+  background-color: white;
+  border-radius: 10px;
+  width: 5rem;
+  height: auto;
+}
+.custom-icon-class5 {
+  width: 6rem;
+  background-color: white;
+  border-radius: 7%;
+  padding-bottom: 4px;
+  height: auto;
+}
+.custom-icon-class,
+.custom-icon-class2,
+.custom-icon-class3,
+.custom-icon-class4,
+.custom-icon-class5,
+.icon-side-to-side {
+  animation: sideToSideAnimation 3s ease-in-out infinite;
+}
+@keyframes sideToSideAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
   }
 }

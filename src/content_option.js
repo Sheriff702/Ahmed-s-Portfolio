@@ -9,6 +9,10 @@ import img7 from "./assets/images/tictactoe.webp";
 import img8 from "./assets/images/fylo.webp";
 import img9 from "./assets/images/issue-tracker.webp";
 import img10 from "./assets/images/frimark.webp";
+import img11 from "./assets/images/Pondeo.png";
+import img12 from "./assets/images/Moon.png";
+import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
+import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
 const logotext = "AHMED SHARIF";
 const logoimg = logo;
@@ -17,24 +21,26 @@ const meta = {
   description:
     "I’m Ahmed Sharif and im a frontend developer and designer. I love coding and i code cool websites. I develop mobile apps. I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites.",
 };
+const CopyRight = {
+  year: "2023",
+};
 
 const introdata = {
-  title: "I’m Ahmed Sharif",
+  title: "I’m Ahmed Sharif and I",
   animated: {
-    first: "And I Love Coding",
-    second: "I Also Code Cool Websites",
-    third: "I Develop Mobile Apps",
-    forth: "And I'm Just Cool",
+    first: "Love Coding",
+    second: "Code Cool Websites",
+    third: " Develop Mobile Apps",
   },
   description:
-    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites. atleast that's what i believe",
+    "I'm the guy that everyone wants to work with because i'm so cool and i can code cool websites... Atleast that's what i believe 😉 ",
   your_img_url: img,
 };
 
 const dataabout = {
   title: "About Moi",
   aboutme:
-    "👋  Hey, I'm Ahmed Sharif - a 30-year-old guy with a passion for innovation and creativity. Currently, I'm rocking the role of Chief Technology Officer (CTO) at [Your Company], a venture I co-founded to bring groundbreaking ideas to life.",
+    "👋  Hey, I'm Ahmed Sharif - a 30-year-old guy with a passion for innovation and creativity. Currently, I'm rocking the role of Chief Technology Officer (CTO) at Local Le Swued AB, a venture I co-founded to bring groundbreaking ideas to life.",
 
   aboutme2:
     "🚀 My journey has been anything but conventional. While my days are filled with coding and leading tech initiatives, my nights used to resonate with beats as I spent 13 memorable years as a DJ. Music has been an integral part of my life, shaping not only my evenings but also influencing my approach to problem-solving and creativity.",
@@ -67,20 +73,33 @@ const skills = [
     value: 100,
   },
   {
+    name: "Photoshop",
+    value: 100,
+  },
+  {
     name: "Javascript",
+    value: 95,
+  },
+  {
+    name: "Figma",
     value: 90,
   },
   {
     name: "React",
+    value: 85,
+  },
+  {
+    name: "Tailwindcss",
     value: 75,
   },
   {
     name: "node.js",
-    value: 60,
+    value: 65,
   },
+
   {
-    name: "Photoshop",
-    value: 85,
+    name: "Next.js",
+    value: 50,
   },
 ];
 
@@ -167,7 +186,24 @@ const dataportfolio = [
     link: "https://issuetracker-team8.vercel.app/",
     github: "https://github.com/arixstudio/issue-tracker",
   },
+  {
+    img: img11,
+    description:
+      "We had a project where we had to build a website for a company. The website is built with React. OBS: I can not give you the code because it's a company project",
+    link: "https://group10pondeo.netlify.app/",
+  },
+  {
+    img: img12,
+    description: `  I'm glad to share a website we built for our "Explore Code" course with my amazing classmates. This website will take you through the fascinating history of space. 
+    (For the best visualisation, please use a desktop.) I can not share the code because it's a group project`,
+    link: "https://hyperispace.github.io/artemareon/",
+  },
 ];
+
+const CV = {
+  cvenglish: cvenglish,
+  cvswedish: cvswedish,
+};
 
 const contactConfig = {
   YOUR_EMAIL: "Ahmedsheriffbooking@gmail.com",
@@ -187,6 +223,8 @@ const socialprofils = {
   twitter: "https://twitter.com/svarta_shunon",
 };
 export {
+  CopyRight,
+  CV,
   meta,
   dataabout,
   dataportfolio,
