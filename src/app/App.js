@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
@@ -17,37 +17,6 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
-  const [styles, setStyles] = useState([]);
-
-  useEffect(() => {
-    const keyframes = Array.from({ length: 33 }, (_, i) => {
-      const positions = Array.from({ length: 100 }, () => ({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-      }));
-
-      const animationName = `float-${i}`;
-
-      const style = `
-      @keyframes ${animationName} {
-        0% { transform: translate(${positions[0].x}vw, ${positions[0].y}vh); }
-        25% { transform: translate(${positions[1].x}vw, ${positions[1].y}vh); }
-        50% { transform: translate(${positions[2].x}vw, ${positions[2].y}vh); }
-        75% { transform: translate(${positions[3].x}vw, ${positions[3].y}vh); }
-        100% { transform: translate(${positions[0].x}vw, ${positions[0].y}vh); } // Loop back to start for smoothness
-      }
-    `;
-
-      return {
-        animationName,
-        style,
-        size: Math.random() * (2 - 2),
-      };
-    });
-
-    setStyles(keyframes);
-  }, []);
-
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
