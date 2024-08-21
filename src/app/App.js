@@ -50,35 +50,20 @@ export default function App() {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <style>{styles.map((s) => s.style).join("")}</style>
-      <div className="bubbles">
-        {styles.map((s, i) => (
-          <span
-            key={i}
-            className="span"
-            style={{
-              width: `${s.size}rem`,
-              height: `${s.size}rem`,
-              animation: `${s.animationName} 90s linear infinite`, // Longer duration for smoother transition
-              boxShadow: "0px 0px 20px 10px rgba(10, 120, 173, 0.85)", // Significant light green shadow
-            }}
-          />
-        ))}
-        <div className="cursor__dot">
-          <AnimatedCursor
-            innerSize={15}
-            outerSize={15}
-            color="255, 255 ,255"
-            outerAlpha={0.4}
-            innerScale={0.7}
-            outerScale={5}
-          />
-        </div>
-        <ScrollToTop>
-          <Headermain />
-          <AppRoutes />
-        </ScrollToTop>
+      <div className="cursor__dot">
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="255, 255 ,255"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
       </div>
+      <ScrollToTop>
+        <Headermain />
+        <AppRoutes />
+      </ScrollToTop>
     </Router>
   );
 }
