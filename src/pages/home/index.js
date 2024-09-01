@@ -45,42 +45,51 @@ export const Home = () => {
                 About Moi
               </div>
             </Link>
-            <div
-              className="ac_btn btn"
-              id="button_c"
-              onClick={() => setShowModal(true)}
-            >
-              Download CV
-            </div>
+            <div>
+              <div
+                className="ac_btn btn"
+                id="button_c"
+                onClick={() => setShowModal(true)}
+              >
+                Download CV
+              </div>
 
-            {showModal && (
-              <div className="modal">
-                <div className="modal-content">
-                  <div className="modal-X">
-                    <span className="close" onClick={() => setShowModal(false)}>
-                      &times;
-                    </span>
-                  </div>
-                  <div className="modal-header">
-                    <p>Select the version of the CV you want to download:</p>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href={CV.cvenglish}
-                      download="Ahmed_Sharif_CV_ENGLISH.pdf"
-                    >
-                      <div className="ac_btn btn">Download English Version</div>
-                    </a>
-                    <a
-                      href={CV.cvswedish}
-                      download="Ahmed_Sharif_CV_SWEDISH.pdf"
-                    >
-                      <div className="ac_btn btn">Download Swedish Version</div>
-                    </a>
+              {showModal && (
+                <div className="modal">
+                  <div className="modal-content">
+                    <div className="modal-X">
+                      <span
+                        className="close"
+                        onClick={() => setShowModal(false)}
+                      >
+                        &times;
+                      </span>
+                    </div>
+                    <div className="modal-header">
+                      <p>Select the version of the CV you want to download:</p>
+                    </div>
+                    <div className="modal-body">
+                      <a
+                        href={CV.cvenglish}
+                        download="Ahmed_Sharif_CV_ENGLISH.pdf"
+                      >
+                        <div className="ac_btn btn">
+                          Download English Version
+                        </div>
+                      </a>
+                      <a
+                        href={CV.cvswedish}
+                        download="Ahmed_Sharif_CV_SWEDISH.pdf"
+                      >
+                        <div className="ac_btn btn">
+                          Download Swedish Version
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
 

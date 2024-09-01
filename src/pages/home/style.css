@@ -40,9 +40,15 @@
   height: auto;
   overflow: hidden;
 }
+.intro_btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 
 .ac_btn {
-  padding: 4px 19px;
+  padding: 4px 15px;
   color: var(--secondary-color);
   position: relative;
   border: var(--secondary-color) 2px solid;
@@ -201,6 +207,14 @@
 }
 
 @media (max-width: 768px) {
+  .boxen {
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+  .ac_btn {
+    justify-content: center;
+    font-size: small;
+    padding: 5px 10px;
+  }
   .modal-content {
     width: 90%;
     padding: 1em;

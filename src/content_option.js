@@ -11,6 +11,7 @@ import img9 from "./assets/images/issue-tracker.webp";
 import img10 from "./assets/images/frimark.webp";
 import img11 from "./assets/images/Pondeo.png";
 import img12 from "./assets/images/Moon.png";
+import img13 from "./assets/images/carousel.png";
 import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
 import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
@@ -194,9 +195,14 @@ const dataportfolio = [
   },
   {
     img: img12,
-    description: `  I'm glad to share a website we built for our "Explore Code" course with my amazing classmates. This website will take you through the fascinating history of space. 
-    (For the best visualisation, please use a desktop.) I can not share the code because it's a group project`,
+    description: `  I'm glad to share a website we built for our course with my classmates. This website will take you through the fascinating history of space. 
+    (For the best visualisation, please use a desktop.)`,
     link: "https://hyperispace.github.io/artemareon/",
+  },
+  {
+    img: img13,
+    description: ` A website i built for a client. The website is built with Next.JS and tailwindCSS . The website is available on Web and both android and ios.`,
+    link: "https://master--andybrandy.netlify.app/",
   },
 ];
 
