@@ -11,39 +11,26 @@
   border-color: var(--text-color) !important;
 }
 
-.progress-title {
-  font-size: 20px;
+.sec_sp {
+  margin-bottom: calc(3rem + 5.128vw);
+}
+
+.skill-section {
+  margin-bottom: 30px; /* Add spacing between each skill */
+}
+
+.skill-title {
+  font-size: 22px;
   font-weight: 700;
-  margin: 15px 0 20px;
-  font-family: "Raleway";
-  color: pink;
+  color: #ff1493; /* Use a strong color to make the title pop */
+  font-family: "Raleway", sans-serif;
 }
 
-.progress {
-  height: 5px;
-  background: var(--secondary);
-  border-radius: 0;
-  box-shadow: none;
-  margin-bottom: 30px;
-  overflow: visible;
-}
-
-.progress .progress-bar {
-  position: relative;
-  background: var(--text-color);
-  animation: animate-positive 5s;
-  overflow: visible;
-  opacity: 0.9;
-}
-
-.progress .progress-value {
-  position: absolute;
-  top: -30px;
-  right: 8px;
-  font-size: 17px;
-  font-weight: bold;
-  font-style: italic;
-  color: var(--text-color);
+.skill-description {
+  font-size: 16px;
+  color: #ccc; /* Lighter text for description */
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
 }
 
 @-webkit-keyframes animate-positive {

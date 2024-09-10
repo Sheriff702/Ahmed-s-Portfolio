@@ -39,16 +39,18 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "About Moi",
+  title: "About Me",
   aboutme:
-    "👋  Hey, I'm Ahmed Sharif - a 30-year-old guy with a passion for innovation and creativity. Currently, I'm rocking the role of Chief Technology Officer (CTO) at Local Le Swued AB, a venture I co-founded to bring groundbreaking ideas to life.",
+    "👋 Hey there! I'm Ahmed Sharif, a 30-year-old tech enthusiast and creative thinker. Currently, I'm serving as the Chief Technology Officer (CTO) at Local Le Swued AB, a company I co-founded with the goal of transforming innovative ideas into reality.",
 
   aboutme2:
-    "🚀 My journey has been anything but conventional. While my days are filled with coding and leading tech initiatives, my nights used to resonate with beats as I spent 13 memorable years as a DJ. Music has been an integral part of my life, shaping not only my evenings but also influencing my approach to problem-solving and creativity.",
+    "🚀 My career path has been anything but ordinary. While my days now revolve around coding and leading tech projects, I spent 13 incredible years as a DJ, filling nights with music and rhythm. This experience not only fueled my love for music but also shaped my approach to creativity and problem-solving.",
+
   aboutme3:
-    "🎓 I'm currently deep-diving into the world of Frontend Development at Hyper Island, where I'm honing my skills to create seamless and user-friendly digital experiences. The blend of my technical expertise and creative background gives me a unique perspective in navigating the ever-evolving landscape of technology.",
+    "🎓 Right now, I'm diving deep into Frontend Development at Hyper Island, where I'm refining my skills in crafting seamless, user-friendly digital experiences. The fusion of my technical know-how and my creative background gives me a unique advantage in navigating the fast-paced world of technology.",
+
   aboutme4:
-    "🌐 Over the years, I've embraced a myriad of roles and experiences. From spinning tracks in lively venues to steering a tech startup, every chapter has contributed to the diverse skill set and mindset I bring to the table.",
+    "🌐 Over the years, I’ve worn many hats – from spinning records at vibrant venues to steering the ship of a tech startup. Each chapter has enriched my perspective and contributed to the diverse skill set I bring to every project.",
 };
 const worktimeline = [
   {
@@ -70,55 +72,61 @@ const worktimeline = [
 
 const skills = [
   {
-    name: "HMTL & CSS",
-    value: 100,
+    name: "HTML & CSS",
+    description:
+      "I love creating clean, responsive layouts and exploring new CSS techniques.",
   },
   {
     name: "Photoshop",
-    value: 100,
+    description:
+      "A tool I frequently use to design creative and engaging user interfaces.",
   },
   {
-    name: "Javascript",
-    value: 95,
+    name: "JavaScript",
+    description:
+      "A language I work with daily. I'm always exploring new libraries and patterns.",
   },
   {
     name: "Figma",
-    value: 90,
+    description:
+      "My go-to tool for prototyping and wireframing, keeping things visually organized.",
   },
   {
     name: "React",
-    value: 85,
+    description:
+      "I enjoy building interactive UIs and constantly learning new best practices.",
   },
-  {
-    name: "Tailwindcss",
-    value: 75,
-  },
-  {
-    name: "node.js",
-    value: 65,
-  },
-
   {
     name: "Next.js",
-    value: 50,
+    description:
+      "Currently diving deeper into server-side rendering and static site generation.",
+  },
+  {
+    name: "TailwindCSS",
+    description:
+      "I love the efficiency it brings to creating responsive, utility-first designs.",
+  },
+  {
+    name: "Node.js",
+    description:
+      "I'm improving my skills in backend development and learning more about APIs.",
   },
 ];
-
 const services = [
   {
     title: "UI & UX Design",
     description:
-      "Passionate about crafting intuitive and visually appealing user interfaces. I believe in creating seamless user experiences that leave a lasting impression. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I’m passionate about crafting intuitive and visually appealing user interfaces. For me, it's all about creating seamless user experiences that not only function but also leave a lasting impression. Fun fact: I often draw inspiration from my time as a DJ – finding the perfect balance between creativity and structure is key in both music and design.",
   },
   {
     title: "Mobile Apps",
     description:
-      "Bringing ideas to life through cutting-edge mobile app development. From concept to deployment, I specialize in building responsive and feature-rich applications that cater to modern user needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I love bringing ideas to life through cutting-edge mobile app development. From concept to deployment, I specialize in building responsive, feature-rich applications tailored to modern user needs. If you're interested in pairing up for some collaborative programming or working in an agile environment, let’s connect!",
   },
   {
     title: "Custom Web Solutions",
     description:
-      "Crafting unique and tailored web solutions to meet your specific needs. Whether it's a dynamic website or a complex web application, I specialize in delivering custom solutions that stand out. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "Whether it's a dynamic website or a complex web application, I enjoy crafting unique, tailored web solutions to meet specific needs. I'm always up for a challenge and thrive on delivering custom solutions that stand out in a crowded digital space.",
   },
 ];
 

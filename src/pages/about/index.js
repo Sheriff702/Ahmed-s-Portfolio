@@ -81,25 +81,24 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              const color = getRandomColor();
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
+            <Row>
+              {skills.map((data, i) => {
+                const color = getRandomColor();
+                return (
+                  <Col lg="6" key={i} className="skill-section">
+                    <h3
+                      className="skill-title"
                       style={{
-                        width: `${data.value}%`,
-                        backgroundColor: color, // Apply the generated color
+                        color: color, // Apply the generated color
                       }}
                     >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+                      {data.name}
+                    </h3>
+                    <p className="skill-description">{data.description}</p>
+                  </Col>
+                );
+              })}
+            </Row>
           </Col>
         </Row>
         <Row className="sec_sp">
