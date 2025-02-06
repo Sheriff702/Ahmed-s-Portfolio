@@ -56,6 +56,11 @@ const dataabout = {
 };
 const worktimeline = [
   {
+    jobtitle: "Frontend Developer",
+    where: "CodeOC AB",
+    date: "2025 - Present",
+  },
+  {
     jobtitle: "Co-Founder & CTO ",
     where: "The Wiggle App(Local le Swued AB)",
     date: "2023 - Present",
