@@ -12,6 +12,8 @@ import img10 from "./assets/images/frimark.webp";
 import img11 from "./assets/images/Pondeo.png";
 import img12 from "./assets/images/Moon.png";
 import img13 from "./assets/images/carousel.png";
+import img14 from "./assets/images/wilfix.jpeg";
+import img15 from "./assets/images/Pastell.jpeg";
 import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
 import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
@@ -132,6 +134,13 @@ const services = [
 
 const dataportfolio = [
   {
+    img: img14,
+    description:
+      "I built a website for a company called Wilfix. The website is built with Vite and tailwindCSS. The website is available on Web and both android and ios.",
+    link: "https://wifix.netlify.app/",
+  },
+
+  {
     img: img3,
     description: "I built a Website for Djs",
     link: "https://dj-jusuf.netlify.app/",
@@ -152,13 +161,6 @@ const dataportfolio = [
     github: "https://github.com/hypernetworkfed25/hypernetwork",
   },
   {
-    img: img5,
-    description:
-      "this is a game we developed. The game is called Hyperflapper. It's a game where you can play and compete with your friends. The game is available on Web only ",
-    link: "https://simon-rosengren.github.io/Group-8-Project/",
-    github: "https://github.com/simon-rosengren/Group-8-Project",
-  },
-  {
     img: img2,
     description:
       "Introducing The Wiggle App, your ultimate nightlife companion! Discover the hottest parties, events, clubs, and bars in your city. Available on Android and iOS.",
@@ -166,6 +168,13 @@ const dataportfolio = [
     github: "",
     description2:
       "This app i can not show you the code because it's a company project",
+  },
+  {
+    img: img5,
+    description:
+      "this is a game we developed. The game is called Hyperflapper. It's a game where you can play and compete with your friends. The game is available on Web only ",
+    link: "https://simon-rosengren.github.io/Group-8-Project/",
+    github: "https://github.com/simon-rosengren/Group-8-Project",
   },
 
   {
@@ -187,6 +196,12 @@ const dataportfolio = [
     img: img8,
     description: "A landing page i built with HTML and CSS",
     link: "https://main--fylooland.netlify.app/",
+  },
+  {
+    img: img15,
+    description:
+      "I built a website for a company called Pastell. The website is built with NextJS and tailwindCSS. The website is available on Web and both android and ios.",
+    link: "https://passwe.netlify.app/",
   },
   {
     img: img9,
