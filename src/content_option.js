@@ -1,5 +1,5 @@
 import img from "./assets/images/ahmed.png";
-import logo from "./assets/images/img.png";
+import logo from "./assets/images/Creatune.png";
 import img2 from "./assets/images/thewiggleapp.webp";
 import img3 from "./assets/images/djpage.webp";
 import img4 from "./assets/images/hypernetwork.webp";
@@ -14,8 +14,6 @@ import img12 from "./assets/images/Moon.png";
 import img13 from "./assets/images/carousel.png";
 import img14 from "./assets/images/wilfix.jpeg";
 import img15 from "./assets/images/Pastell.jpeg";
-import cvenglish from "./assets/cv/Ahmed_Sharif_CV_ENGLISH.pdf";
-import cvswedish from "./assets/cv/Ahmed_Sharif_CV_SWEDISH.pdf";
 
 const logotext = "AHMED SHARIF";
 const logoimg = logo;
@@ -56,14 +54,24 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "Frontend Developer",
-    where: "CodeOC AB",
-    date: "2025 - Present",
+    jobtitle: "Founder & CTO",
+    where: "SaveMeal AB ",
+    date: "2025 April - Present",
   },
   {
     jobtitle: "Co-Founder & CTO ",
     where: "The Wiggle App(Local le Swued AB)",
     date: "2023 - Present",
+  },
+  {
+    jobtitle: "COO",
+    where: "NBH Snacks AB",
+    date: "2025 April - 2025 November",
+  },
+  {
+    jobtitle: "Software Engineer",
+    where: "CodeOC AB",
+    date: "2024 November - 2025 May",
   },
   {
     jobtitle: "Production Manager",
@@ -142,7 +150,7 @@ const dataportfolio = [
     img: img14,
     description:
       "I built a website for a company called Wilfix. The website is built with Vite and tailwindCSS. The website is available on Web and both android and ios.",
-    link: "https://wifix.netlify.app/",
+    link: "https://wilfix.se/",
   },
 
   {
@@ -235,8 +243,8 @@ const dataportfolio = [
 ];
 
 const CV = {
-  cvenglish: cvenglish,
-  cvswedish: cvswedish,
+  cvenglish: null,
+  cvswedish: "/cv/CV.pdf",
 };
 
 const contactConfig = {
@@ -244,10 +252,10 @@ const contactConfig = {
   YOUR_FONE: "+46 (0)76 066 47 54",
   description:
     "Drop me a line if you have any questions or just want to say hi. I'll get back to you as soon as possible!",
-  //  an emailjs.com account
-  YOUR_SERVICE_ID: "service_c3fx2b8",
-  YOUR_TEMPLATE_ID: "template_9nus7zw",
-  YOUR_USER_ID: "uDfnGgGBD0zBBIZU0",
+  // EmailJS configuration (set via environment variables for security)
+  YOUR_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+  YOUR_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+  YOUR_USER_ID: process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "",
 };
 
 const socialprofils = {

@@ -1,25 +1,56 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useEffect, useState } from "react";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Image from "next/image";
 import { CopyRight, logoimg, logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleBodyScroll = (shouldHide) => {
+    if (typeof document === "undefined") return;
+    document.body.classList.toggle("ovhidden", shouldHide);
+  };
 
   const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+    setMenuOpen((prev) => {
+      const next = !prev;
+      toggleBodyScroll(next);
+      return next;
+    });
   };
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setMenuOpen(false);
+      toggleBodyScroll(false);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("routeChangeError", handleRouteChange);
+    return () => {
+      handleRouteChange();
+      router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off("routeChangeError", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <div className="navbarlogo">
-            <Link className="navbar-brand nav_ac" to="/">
-              {logotext}, <img className="logoimgs" src={logoimg} alt="logo" />
+            <Link className="navbar-brand nav_ac" href="/">
+              {logotext},{" "}
+              <Image
+                className="logoimgs"
+                src={logoimg}
+                alt="logo"
+                width={50}
+                height={50}
+              />
             </Link>
           </div>
           <div className="d-flex align-items-center">
@@ -29,39 +60,41 @@ const Headermain = () => {
               onClick={handleToggle}
               aria-label="Toggle Navigation"
             >
-              {!isActive ? <VscClose /> : <VscGrabber />}
+              {menuOpen ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${menuOpen ? "menu__opend" : ""}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                    <Link onClick={handleToggle} to="/" className="my-3">
+                    <Link onClick={handleToggle} href="/" className="my-3">
                       Home
                     </Link>
                   </li>
                   <li className="menu_item">
                     <Link
                       onClick={handleToggle}
-                      to="/portfolio"
+                      href="/portfolio"
                       className="my-3"
                     >
-                      {" "}
                       Portfolio
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">
+                    <Link onClick={handleToggle} href="/about" className="my-3">
                       About
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/contact" className="my-3">
-                      {" "}
+                    <Link
+                      onClick={handleToggle}
+                      href="/contact"
+                      className="my-3"
+                    >
                       Contact
                     </Link>
                   </li>

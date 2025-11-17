@@ -16,9 +16,21 @@ Install required dependencies
 
 <pre>yarn install</pre>
 
-Start the server
+Start the development server
 
-<pre>yarn start</pre>
+<pre>yarn dev</pre>
+
+### Environment Variables
+
+Copy `.env.example` to `.env` and provide your EmailJS credentials:
+
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_USER_ID=your_user_id
+```
+
+These values are required for the contact form to send emails.
 
 ### More
 
