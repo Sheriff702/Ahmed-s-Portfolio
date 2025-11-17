@@ -37,7 +37,7 @@ export const ContactUs = () => {
     setFormdata((prev) => ({ ...prev, loading: true }));
 
     const templateParams = {
-      from_name: formData.email,
+      from_email: formData.email,
       user_name: formData.name,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
@@ -135,6 +135,10 @@ export const ContactUs = () => {
               )}
             </address>
             <p>{contactConfig.description}</p>
+            <p>
+              Behöver du fler case eller referenser? Säg bara till så skickar
+              jag gärna över fler exempel på tidigare projekt.
+            </p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">

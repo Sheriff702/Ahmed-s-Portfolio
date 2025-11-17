@@ -9,3 +9,8 @@ build/
 .example_com.key
 
 .example_com.csr
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

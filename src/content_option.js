@@ -248,7 +248,7 @@ const CV = {
 };
 
 const contactConfig = {
-  YOUR_EMAIL: "Ahmedsheriffbooking@gmail.com",
+  YOUR_EMAIL: "Ahmed.sharif@hyperisland.se",
   YOUR_FONE: "+46 (0)76 066 47 54",
   description:
     "Drop me a line if you have any questions or just want to say hi. I'll get back to you as soon as possible!",
