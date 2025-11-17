@@ -107,6 +107,8 @@ export const Home = () => {
             <Image
               className="profilbild"
               src={introdata.your_img_url} // Make sure this path is correct
+              width={800}
+              height={800}
               alt="ProfilePicture"
             />
           </div>
